@@ -21,24 +21,16 @@ int main()
         cin.ignore(100, '\n');
       }
       
-      for(int i =1; i <= stop; i++)
+      if((N % 10) == 1)
       {
-        if( (N % 10) == 1)
-        {
-          cout << N << "st" << endl;
-        }
-        else( (N % 10) == 2);
-        {
-          cout << N << "nd" << endl;
-        }
-        if( ((N % 10) == 4) || ((N % 10) == 5))
-        {
-          cout << N << "th" << endl;
-        }
+        cout << N << "st" << endl;
       }
+    
+    --N;
 
 
   }while(N != 0);
+  
 
   
   return 0;
