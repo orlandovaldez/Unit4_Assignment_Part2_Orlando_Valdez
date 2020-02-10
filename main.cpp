@@ -20,7 +20,7 @@ int main()
       }
      for(int i = 1;i <= N ; i++)//process user input and display an output to user
        {
-          if( (i % 10) == 1) 
+          if( (i % 10) == 1 && N >= 11) 
           {
             cout << i << "st Hello" << endl; 
           }
@@ -32,15 +32,12 @@ int main()
           {
             cout << i << "rd Hello" << endl;
           }
-          if((i % 10 )==4 || (i% 10)==5 || (i% 10)==6 || (i% 10)==7 || (i% 10)==8 || (i% 10)==9 ||(i% 10)==0) 
+          if((i % 10 )==4 || (i% 10)==5 || (i% 10)==6 || (i% 10)==7 || (i% 10)==8 || (i% 10)==9 ||(i% 10)==0 || i==11 || i==12 || i==13) 
           {
             cout << i << "th Hello" << endl;
           }
           
-          if(i+1==11 || i+1==12 || i+1==13)
-          {
-            cout << i << "th Hello" << endl;
-          }       
+                 
        
        } 
   
