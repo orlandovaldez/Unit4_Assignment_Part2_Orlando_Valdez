@@ -1,5 +1,8 @@
 /*
-
+Name: Orlando Valdez
+Course Name Section: COSC-1436-57002
+Tool: Repl.it
+This programs use case is to accept an input form the user, which will be used as a stopping point for a countdown of inters wiht thier respective ordinals
 */
 
 #include <iostream>
