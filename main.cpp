@@ -1,4 +1,6 @@
-//
+/*
+
+*/
 
 #include <iostream>
 using namespace std;
@@ -7,31 +9,40 @@ using namespace std;
 int main()
 
 {
-  int N = 0;
-  int stop = 0;
-  do
-
-  {
-
-      cout << "Enter an arguement: " << endl;
-      while(!(cin >> N))
+  int N = 0;//establish variables
+  
+      cout << "Enter an arguement: " << endl;//get input from user
+      while(!(cin >> N))//check to see if user input is a valid input
       {
         cout << "Must be valid Integer, try again: " << endl;
         cin.clear();
         cin.ignore(100, '\n');
       }
-      
-      if((N % 10) == 1)
-      {
-        cout << N << "st" << endl;
-      }
-    
-    --N;
-
-
-  }while(N != 0);
-  
-
+     for(int i = 1;i <= N ; i++)//process user input and display an output to user
+       {
+          if( (i % 10) == 1) 
+          {
+            cout << i << "st Hello" << endl; 
+          }
+          if(( i % 10)==2)
+          {
+            cout << i << "nd Hello" << endl;
+          }
+          if(( i % 10 )==3)
+          {
+            cout << i << "rd Hello" << endl;
+          }
+          if((i % 10 )==4 || (i% 10)==5 || (i% 10)==6 || (i% 10)==7 || (i% 10)==8 || (i% 10)==9 ||(i% 10)==0) 
+          {
+            cout << i << "th Hello" << endl;
+          }
+          
+          if(i+1==11 || i+1==12 || i+1==13)
+          {
+            cout << i << "th Hello" << endl;
+          }       
+       
+       } 
   
   return 0;
 }
